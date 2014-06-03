@@ -1,21 +1,21 @@
 nb:
   plugins:
-    members:
-      title: Members
+    usermembers:
+      title: Usermembers
   admin:
-    members:
+    usermembers:
       actions:
-        create_new: Lag en ny Member
-        reorder: Endre rekkefølgen på Members
-        reorder_done: Ferdig å endre rekkefølgen Members
+        create_new: Lag en ny Usermember
+        reorder: Endre rekkefølgen på Usermembers
+        reorder_done: Ferdig å endre rekkefølgen Usermembers
       records:
-        title: Members
+        title: Usermembers
         sorry_no_results: Beklager! Vi fant ikke noen resultater.
-        no_items_yet: Det er ingen Members enda. Klikk på "Lag en ny Member" for å legge til din første member.
-      member:
+        no_items_yet: Det er ingen Usermembers enda. Klikk på "Lag en ny Usermember" for å legge til din første member.
+      usermember:
         view_live_html: Vis hvordan denne member ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
         edit: Rediger denne member
         delete: Fjern denne member permanent
-  members:
+  usermembers:
     show:
-      other: Andre Members
+      other: Andre Usermembers

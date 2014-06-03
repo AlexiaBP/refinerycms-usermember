@@ -1,12 +1,12 @@
 require "refinerycms-core"
 
 module Refinery
-  autoload :MembersGenerator, "generators/refinery/members/members_generator"
+  autoload :UsermembersGenerator, "generators/refinery/usermembers/usermembers_generator"
 
-  module Members
-    require "refinery/members/engine"
+  module Usermembers
+    require "refinery/usermembers/engine"
 
-    autoload :InstanceMethods, "refinery/members/instance_methods"
+    autoload :InstanceMethods, "refinery/usermembers/instance_methods"
 
     class << self
       def root

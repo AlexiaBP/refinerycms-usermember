@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe Refinery::Members::Admin::MembersController do
+describe Refinery::Usermembers::Admin::UsermembersController do
   login_refinery_superuser
 
   describe "GET index" do

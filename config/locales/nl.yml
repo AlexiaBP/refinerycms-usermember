@@ -1,21 +1,21 @@
 nl:
   plugins:
-    members:
-      title: Members
+    usermembers:
+      title: Usermembers
   admin:
-    members:
+    usermembers:
       actions:
-        create_new: Maak een nieuwe Member
-        reorder: Wijzig de volgorde van de Members
-        reorder_done: Klaar met het wijzingen van de volgorde van de Members
+        create_new: Maak een nieuwe Usermember
+        reorder: Wijzig de volgorde van de Usermembers
+        reorder_done: Klaar met het wijzingen van de volgorde van de Usermembers
       records:
-        title: Members
+        title: Usermembers
         sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
-        no_items_yet: Er zijn nog geen Members. Druk op 'Maak een nieuwe Member' om de eerste aan te maken.
-      member:
+        no_items_yet: Er zijn nog geen Usermembers. Druk op 'Maak een nieuwe Usermember' om de eerste aan te maken.
+      usermember:
         view_live_html: Bekijk deze member op de website <br/><em>(opent een nieuw venster)</em>
         edit: Bewerk deze member
         delete: Verwijder deze member voor eeuwig
-  members:
+  usermembers:
     show:
-      other: Andere Members
+      other: Andere Usermembers

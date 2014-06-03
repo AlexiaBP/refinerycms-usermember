@@ -1,9 +1,9 @@
 require "spec_helper"
 
-describe Refinery::Members::SessionsController do
+describe Refinery::Usermembers::SessionsController do
   before do
     FactoryGirl.create(:refinery_user)
-    @request.env["devise.mapping"] = Devise.mappings[:member]
+    @request.env["devise.mapping"] = Devise.mappings[:usermember]
   end
 
   describe "GET new" do
@@ -13,10 +13,10 @@ describe Refinery::Members::SessionsController do
   end
 
   describe "POST create" do
-    subject { post :create, member: {email: "nobody@nowhere.net", password: "secret123"} }
+    subject { post :create, usermember: {email: "nobody@nowhere.net", password: "secret123"} }
 
     before do
-      FactoryGirl.create(:refinery_member, email: "nobody@nowhere.net", password: "secret123")
+      FactoryGirl.create(:refinery_usermember, email: "nobody@nowhere.net", password: "secret123")
     end
 
     it { should redirect_to "/" }

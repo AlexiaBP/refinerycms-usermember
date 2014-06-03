@@ -1,12 +1,12 @@
 require "spec_helper"
 
-describe "/refinery/members/admin/members/new" do
+describe "/refinery/usermembers/admin/usermembers/new" do
   subject { render }
 
   before do
-    assign(:member, Refinery::Members::Member.new)
+    assign(:usermember, Refinery::Usermembers::Usermember.new)
     view.stub(from_dialog?: false)
   end
 
-  it { should have_css "form[action='/refinery/members']" }
+  it { should have_css "form[action='/refinery/usermembers']" }
 end

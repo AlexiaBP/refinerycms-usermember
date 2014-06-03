@@ -1,1 +1,1 @@
-require "refinery/members"
+require "refinery/usermembers"

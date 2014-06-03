@@ -1,9 +1,9 @@
 Refinery::Core::Engine.routes.draw do
-  devise_for :members, :class_name => "Refinery::Members::Member", :module => "refinery/members"
+  devise_for :usermembers, :class_name => "Refinery::Usermembers::Usermember", :module => "refinery/usermembers"
 
-  namespace :members, :path => '' do
+  namespace :usermembers, :path => '' do
     namespace :admin, :path => 'refinery' do
-      resources :members, :except => :show do
+      resources :usermembers, :except => :show do
         collection do
           post :update_positions
         end

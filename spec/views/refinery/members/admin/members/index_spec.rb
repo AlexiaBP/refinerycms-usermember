@@ -1,9 +1,9 @@
 require "spec_helper"
 
-describe "/refinery/members/admin/members/index" do
+describe "/refinery/usermembers/admin/usermembers/index" do
   subject { render }
 
-  let(:member) { FactoryGirl.create(:refinery_member) }
+  let(:usermember) { FactoryGirl.create(:refinery_usermember) }
 
   before do
     view.stub(refinery_icon_tag: "")
@@ -12,8 +12,8 @@ describe "/refinery/members/admin/members/index" do
   before do
     view.stub(searching?: false)
     view.stub(from_dialog?: false)
-    assign(:members, [member])
+    assign(:usermembers, [usermember])
   end
 
-  it { should have_css "#member_#{member.id}" }
+  it { should have_css "#usermember_#{usermember.id}" }
 end

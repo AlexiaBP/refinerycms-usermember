@@ -1,32 +1,32 @@
 module Refinery
-  module Members
+  module Usermembers
     class Engine < ::Rails::Engine
       include Refinery::Engine
 
-      engine_name :refinery_members
-      isolate_namespace Refinery::Members
+      engine_name :refinery_usermembers
+      isolate_namespace Refinery::Usermembers
 
       config.autoload_paths += %W( #{config.root}/lib )
 
       after_inclusion do
-        Refinery::PagesController.send :include, Refinery::Members::InstanceMethods
+        Refinery::PagesController.send :include, Refinery::Usermembers::InstanceMethods
       end
 
-      initializer "register refinery_members plugin" do
+      initializer "register refinery_usermembers plugin" do
         Refinery::Plugin.register do |plugin|
           plugin.pathname = root
-          plugin.name = "members"
-          plugin.menu_match = %r{refinery\/members(\/.+?)?$}
+          plugin.name = "usermembers"
+          plugin.menu_match = %r{refinery\/usermembers(\/.+?)?$}
           plugin.activity = {
-            :class_name => :"refinery/members/member",
+            :class_name => :"refinery/usermembers/usermember",
             :title => "email"
           }
-          plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.members_admin_members_path }
+          plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.usermembers_admin_usermembers_path }
         end
       end
 
       config.after_initialize do
-        Refinery.register_extension(Refinery::Members)
+        Refinery.register_extension(Refinery::Usermembers)
       end
     end
   end

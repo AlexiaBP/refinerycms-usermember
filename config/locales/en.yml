@@ -1,24 +1,24 @@
 en:
   refinery:
     plugins:
-      members:
-        title: Members
-    members:
+      usermembers:
+        title: Usermembers
+    usermembers:
       admin:
-        members:
+        usermembers:
           actions:
-            create_new: Add New Member
-            reorder: Reorder Members
-            reorder_done: Done Reordering Members
-          member:
+            create_new: Add New Usermember
+            reorder: Reorder Usermembers
+            reorder_done: Done Reordering Usermembers
+          usermember:
             delete: Remove this member forever
             edit: Edit this member
             view_live_html: View this member live <br/><em>(opens in a new window)</em>
           records:
-            no_items_yet: There are no Members yet. Click "Add New Member" to add your first member.
-            title: Members
+            no_items_yet: There are no Usermembers yet. Click "Add New Usermember" to add your first member.
+            title: Usermembers
             sorry_no_results: Sorry! There are no results found.
-      members:
+      usermembers:
         show:
           need_login: You must be a logged-in member to view this page
-          other: Other Members
+          other: Other Usermembers

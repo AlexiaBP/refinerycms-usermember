@@ -4,22 +4,22 @@ lolcat:
       image_picker:
         image: IMAGE
   plugins:
-    members:
-      title: Members
+    usermembers:
+      title: Usermembers
   admin:
-    members:
+    usermembers:
       actions:
-        create_new: CREATE NEW Member
-        reorder: REORDR Members
-        reorder_done: DUN REORDERIN Members
+        create_new: CREATE NEW Usermember
+        reorder: REORDR Usermembers
+        reorder_done: DUN REORDERIN Usermembers
       records:
-        title: Members
+        title: Usermembers
         sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
-        no_items_yet: THAR R NO Members YET. CLICK "CREATE NEW Member" 2 ADD UR FURST member.
-      member:
+        no_items_yet: THAR R NO Usermembers YET. CLICK "CREATE NEW Usermember" 2 ADD UR FURST member.
+      usermember:
         view_live_html: VIEW DIS member LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
         edit: EDIT DIS member
         delete: REMOOV DIS member FOREVR
-  members:
+  usermembers:
     show:
-      other: OTHR Members
+      other: OTHR Usermembers
